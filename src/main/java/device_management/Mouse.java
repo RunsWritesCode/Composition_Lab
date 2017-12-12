@@ -29,7 +29,7 @@ public class Mouse implements IInput {
     }
 
     public String sendData(String data) {
-        return data;
+        return "squeak " + data;
     }
 
 

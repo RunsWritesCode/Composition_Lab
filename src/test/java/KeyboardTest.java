@@ -16,7 +16,7 @@ public class KeyboardTest {
 
     @Test
     public void canSendData() {
-        assertEquals("sending keystrokes", keyboard.sendData("sending keystrokes"));
+        assertEquals("click sending keystrokes", keyboard.sendData("sending keystrokes"));
     }
 
 

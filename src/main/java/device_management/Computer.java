@@ -39,4 +39,8 @@ public class Computer {
     public String outputSendData(String data) {
         return this.inputDevice.sendData(data);
     }
+
+    public void setInputDevice(IInput inputDevice) {
+        this.inputDevice = inputDevice;
+    }
 }

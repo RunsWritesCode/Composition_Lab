@@ -29,6 +29,6 @@ public class Keyboard implements IInput {
     }
 
     public String sendData(String data) {
-        return data;
+        return "click " + data;
     }
 }

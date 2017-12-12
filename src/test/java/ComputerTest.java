@@ -75,7 +75,7 @@ public class ComputerTest {
         IInput realMouse = new Mouse("wireless", 4);
         Printer printer = new Printer("Epson", "Stylus", 120, 4);
         computer = new Computer(6, 200, printer, realMouse);
-        assertEquals("Squeak", computer.outputSendData("Squeak"));
+        assertEquals("squeak Squeak", computer.outputSendData("Squeak"));
     }
 
     @Test
@@ -83,10 +83,14 @@ public class ComputerTest {
         IInput keyboard1 = new Keyboard("wireless", "English");
         Printer printer = new Printer("Epson", "Stylus", 120, 4);
         computer = new Computer(6, 200, printer, keyboard1);
-        assertEquals("Click", computer.outputSendData("Click"));
+        assertEquals("click Click", computer.outputSendData("Click"));
     }
 
     @Test
-    public void 
+    public void canSetInputDevice() {
+        IInput keyboard2 = new Keyboard("wireless", "English");
+        computer.setInputDevice(keyboard2);
+        assertEquals("click Click", computer.outputSendData("Click"));
+    }
 
 }

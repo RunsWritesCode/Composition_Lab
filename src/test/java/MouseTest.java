@@ -16,7 +16,7 @@ public class MouseTest {
 
     @Test
     public void canSendData() {
-        assertEquals("sending squeak", mouse.sendData("sending squeak"));
+        assertEquals("squeak sending squeak", mouse.sendData("sending squeak"));
     }
 
 }
